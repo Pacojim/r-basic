@@ -58,3 +58,15 @@ ejercicio1(250000000)
 #  5x+3=0
 # 7x+4 = 18
 # x+1 = 1
+
+resolverEcuacion = function(ecuacion, A, B, C = 0) {
+  if(A != 0) {
+    sprintf('El resultado de la ecuación %s es: %f', ecuacion, (C-B)/A);
+  } else {
+    print('La ecuación no tiene solución');
+  }
+}
+resolverEcuacion('2x+4=0', 2, 4)
+resolverEcuacion('5x+3=0', 5, 3)
+resolverEcuacion('7x+4 = 18', 7, 4, 18)
+resolverEcuacion('x+1 = 1', 1, 1, 1)
