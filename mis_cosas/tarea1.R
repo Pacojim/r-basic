@@ -58,7 +58,8 @@ ejercicio1(250000000)
 
 resolverEcuacion = function(ecuacion, A, B, C = 0) {
   if(A != 0) {
-    sprintf('El resultado de la ecuación %s es: %f', ecuacion, (C-B)/A);
+    # sprintf('El resultado de la ecuación %s es: %f', ecuacion, (C-B)/A);
+    (C-B)/A
   } else {
     print('La ecuación no tiene solución');
   }
@@ -77,4 +78,4 @@ round(3*exp(1) - pi, 3)
 # Da una expresión para calcular el módulo del número complejo (2+3i)^2/(5+8i) y, a continuación,
 # da el resultado obtenido redondeado a 3 cifras decimales.
 
-round(Mod(((2+3i)^2)/(2+8i)), 3)
+round(Mod(((2+3i)^2)/(5+8i)), 3)
